@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+	<script src="task4.js"></script>
+</head>
+<body>
+
+<script>
+
+    "use strict";
+
+	let arg1 = +prompt(`Введите первое число`);
+	let arg2 = +prompt(`Введите второе число`);
+	let operation = prompt(`Введите оператор`);
+	alert(`результат равен : ${mathOperation(arg1, arg2, operation)}`);
+
+	function mathOperation(arg1, arg2, operation) {
+			let result;
+			switch (operation) {
+					case "+":
+							result = getSum(arg1,arg2);
+							break;
+					case "-":
+							result = getDif(arg1,arg2);
+							break;
+					case "*":
+							result = getMult(arg1,arg2);
+							break;
+					case "/":
+							result = getDiv(arg1,arg2);
+							break;
+			}
+			return result;
+}
+
+
+
+</script>
+</body>
+</html>

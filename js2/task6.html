@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+
+    
+    
+</head>
+<body>
+
+<script>
+    "use strict";
+	
+	function getLastNumber (a){
+        return a%=10;
+    }
+
+	let x = +prompt(`Введи чсло : `);
+
+
+	if (getLastNumber(x) === 0 || getLastNumber(x) >= 5) {
+			alert(`Ваша сумма в ${x} рублей успешно зачислена.`);
+	} else if (getLastNumber(x) === 1) {
+			alert(`Ваша сумма в ${x} рубль успешно зачислена.`);
+			} else {
+	alert(`Ваша сумма в ${x} рубля успешно зачислена.`);
+	}
+
+
+</script>
+</body>
+</html>
